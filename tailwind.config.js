@@ -10,5 +10,5 @@ export default {
       transitionProperty: {},
     },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };
