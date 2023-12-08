@@ -4,7 +4,10 @@ export default {
 
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        RichBlack: "hsl(257,40%,5%)",
+        DarkPurple: "hsl(257, 40%, 29%)",
+      },
       screens: {},
       fontFamily: {},
       transitionProperty: {},
