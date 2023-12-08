@@ -10,7 +10,9 @@ export default {
       },
       screens: {},
       fontFamily: {},
-      transitionProperty: {},
+      transitionProperty: {
+        size: "height, width",
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
