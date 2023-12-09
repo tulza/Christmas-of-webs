@@ -7,6 +7,7 @@ const Homepage = () => {
     <>
       <div className="flex h-full w-full flex-col">
         <NavDesktop setPage={setPage} />
+
       </div>
     </>
   );
