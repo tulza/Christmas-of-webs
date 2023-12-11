@@ -1,0 +1,12 @@
+.rotate-full {
+  animation: rotate-full 1s ease-out infinite;
+}
+
+@keyframes rotate-full {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export const Button = ({ label }) => {
   return (
-    <button className="hover: w-[100px] bg-white hover:bg-DarkPurple">
+    <button className="hover: aspect-[2] w-[100px] bg-white hover:bg-DarkPurple">
       {label}
     </button>
   );
@@ -23,7 +23,12 @@ export const ToggleDarkmode = () => {
         handleToggle();
       }}
     >
-      <div className="relative flex h-6 w-12 items-center rounded-full bg-white outline outline-black">
+      <div
+        className={clsx(
+          "relative flex h-6 w-12 items-center rounded-full bg-white outline outline-black",
+          on ? "outline-red-500" : "outline-green-500",
+        )}
+      >
         <div
           className={clsx(
             "absolute m-1 h-4 w-4 rounded-full bg-black",
@@ -37,10 +42,12 @@ export const ToggleDarkmode = () => {
 
 const NavDesktop = ({ setPage }) => {
   return (
-    <div className="flex h-[100px] flex-row justify-center gap-4 p-6 outline outline-white">
-      <Button />
-      <Button />
-      <Button />
+    <div className="flex h-[100px] items-center justify-between gap-4 p-6 outline outline-white ">
+      <div className="flex gap-4">
+        <Button />
+        <Button />
+        <Button />
+      </div>
       <ToggleDarkmode />
     </div>
   );
