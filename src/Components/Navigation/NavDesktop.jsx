@@ -40,7 +40,7 @@ export const ToggleDarkmode = () => {
 
 const NavDesktop = ({ setPage }) => {
   return (
-    <div className="flex h-[100px] items-center justify-between gap-4 p-20 ">
+    <div className="absolute flex h-[100px] w-full items-center justify-between gap-4 p-20">
       <div></div>
       <div className="flex flex-row place-items-center gap-20">
         <div className="px-[-10px]">
