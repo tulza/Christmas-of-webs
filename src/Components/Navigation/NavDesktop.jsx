@@ -3,9 +3,7 @@ import React, { useState } from "react";
 
 export const Button = ({ label }) => {
   return (
-    <button className="hover: aspect-[2] w-[100px] bg-white hover:bg-DarkPurple">
-      {label}
-    </button>
+    <button className="gradient-boarder text-text p-8 text-2xl">{label}</button>
   );
 };
 
@@ -42,13 +40,21 @@ export const ToggleDarkmode = () => {
 
 const NavDesktop = ({ setPage }) => {
   return (
-    <div className="flex h-[100px] items-center justify-between gap-4 p-6 outline outline-white ">
-      <div className="flex gap-4">
-        <Button />
-        <Button />
-        <Button />
+    <div className="flex h-[100px] items-center justify-between gap-4 p-20 ">
+      <div></div>
+      <div className="flex flex-row place-items-center gap-20">
+        <div className="px-[-10px]">
+          <Button label="About me" />
+          <Button label="Projects" />
+          <Button label="Education" />
+          <Button label="Portfolio" />
+        </div>
+        <div className=" flex flex-col gap-[7px]">
+          <div className="h-[6px] w-[70px] bg-white" />
+          <div className="h-[6px] w-[70px] bg-white" />
+          <div className="h-[6px] w-[70px] bg-white" />
+        </div>
       </div>
-      <ToggleDarkmode />
     </div>
   );
 };

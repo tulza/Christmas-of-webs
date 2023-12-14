@@ -15,9 +15,7 @@ const Homepage = () => {
       <div className="flex h-full w-full flex-col">
         {/* <LoadingScreen /> */}
         <NavDesktop setPage={setPage} />
-        <div className="h-full w-full">
-          <div className="h-full w-[300px] border border-white"></div>
-        </div>
+        <div className="h-full w-full"></div>
       </div>
     </>
   );
