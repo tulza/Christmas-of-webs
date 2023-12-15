@@ -29,6 +29,9 @@ export default {
       transitionProperty: {
         size: "height, width",
       },
+      animation: {
+        "slide-up": "slide-up-text 0.1s linear",
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],

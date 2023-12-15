@@ -6,7 +6,6 @@ html {
 }
 
 * {
-  @apply transition-all duration-100;
 }
 
 #root {
@@ -31,11 +30,6 @@ html {
 }
 
 .radical-limination-circle {
-  /* background: linear-gradient(
-    45deg,
-    rgba(34, 164, 116, 1) 0%,
-    rgba(41, 47, 143, 1) 100%
-  ); */
   background: radial-gradient(
     circle at center,
     hsla(263, 45%, 35%, 30%) 0%,

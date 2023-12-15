@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export const Button = ({ label }) => {
   return (
-    <button className="gradient-boarder text-text p-8 text-2xl">{label}</button>
+    <button className="gradient-boarder p-8 text-2xl text-text">{label}</button>
   );
 };
 
