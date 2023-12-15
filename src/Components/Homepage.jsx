@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavDesktop from "./Navigation/NavDesktop";
-import Windmill from "./Windmill";
-import LoadingScreen from "./Loading Components/LoadingScreen";
-import { useEffect } from "react";
 import clsx from "clsx";
 import Introduction from "./Introduction";
 

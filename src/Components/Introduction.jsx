@@ -2,8 +2,16 @@ import clsx from "clsx";
 import React from "react";
 import AnimatedText from "./AnimatedText";
 import LuminiateLogo from "./LuminiateLogo";
+import {
+  CSSLogo,
+  HTMLLogo,
+  JSLogo,
+  ReactLogo,
+  TailwindLogo,
+} from "../../public/Images.jsx";
 
 const Introduction = () => {
+  console.log(CSSLogo);
   return (
     <div className="flex h-[100vh] w-full flex-col place-items-center justify-center">
       <div className="flex flex-col">
@@ -13,11 +21,11 @@ const Introduction = () => {
         <p className="text-2xl">Passionate in UX / UI, working with</p>
       </div>
       <div className="flex flex-row">
-        <LuminiateLogo />
-        <LuminiateLogo />
-        <LuminiateLogo />
-        <LuminiateLogo />
-        <LuminiateLogo />
+        <LuminiateLogo logo={CSSLogo} />
+        <LuminiateLogo logo={HTMLLogo} />
+        <LuminiateLogo logo={JSLogo} />
+        <LuminiateLogo logo={ReactLogo} />
+        <LuminiateLogo logo={TailwindLogo} />
       </div>
       {/* Page lumination */}
       <div
