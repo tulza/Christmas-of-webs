@@ -22,8 +22,30 @@ const Introduction = () => {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
       <div className="text-5xl">
+        <div className="flex">
+          <AnimatedText
+            text="Hello, I'm Tulza"
+            variants={defaultAnimation}
+            stagger={0.05}
+          />
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{
+              rotate: [0, 30, 0],
+              transition: {
+                duration: 0.3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+          >
+            👋
+          </motion.span>
+        </div>
         <AnimatedText
-          text="Hello, I'm Tulza"
+          className="ml-4 text-3xl"
+          text="Passionate in UX/UI, working with"
           variants={defaultAnimation}
           stagger={0.05}
         />
