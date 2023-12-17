@@ -16,9 +16,21 @@ const Homepage = () => {
           "relative flex h-full w-full flex-col overflow-x-hidden",
         )}
       >
-        {/* <LoadingScreen /> */}
-        <NavDesktop setPage={setPage} />
+        <NavDesktop />
         <Introduction />
+
+        <div
+          className={clsx(
+            "radical-limination-circle  absolute -z-10 aspect-square w-[75%] rounded-full",
+            "left-0 translate-x-[-50%]",
+          )}
+        />
+        <div
+          className={clsx(
+            "radical-limination-circle  absolute -z-10 aspect-square w-[1750px] rounded-full ",
+            "right-[500px] top-0 translate-x-[50%] translate-y-[-50%]",
+          )}
+        />
       </div>
     </>
   );
