@@ -16,17 +16,23 @@ const defaultAnimation = {
   hidden: { opacity: 0, y: 25 },
   visible: { opacity: 1, y: 0 },
 };
-
 const Introduction = () => {
   const text = "Hello, I'm Tulza";
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
-      <div className="text-5xl">
+      <div className="text-5xl font-bold italic">
         <div className="flex">
           <AnimatedText
-            text="Hello, I'm Tulza"
+            text="Hello, I'm "
             variants={defaultAnimation}
             stagger={0.05}
+          />
+          <AnimatedText
+            text="Tulza"
+            className="text-primary-gradient"
+            variants={defaultAnimation}
+            stagger={0.05}
+            delay={0.5}
           />
           <motion.span
             initial={{ opacity: 0 }}
@@ -44,7 +50,7 @@ const Introduction = () => {
           </motion.span>
         </div>
         <AnimatedText
-          className="ml-4 text-3xl"
+          className="ml-[-20px] text-3xl font-normal"
           text="Passionate in UX/UI, working with"
           variants={defaultAnimation}
           stagger={0.05}

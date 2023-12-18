@@ -1,18 +1,21 @@
+import clsx from "clsx";
 import { useInView, motion } from "framer-motion";
 import React, { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const AnimatedText = ({ text, className, variants, stagger }) => {
+const AnimatedText = ({ text, className, variants, stagger, delay }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { amount: 0.5 });
-  const staggerChildren = stagger ? stagger : 0.01;
+  stagger = stagger ? stagger : 0.01;
+  delay = delay ? delay : 0.01;
+
   return (
     <p className={className}>
       <motion.span
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        transition={{ staggerChildren: staggerChildren }}
+        transition={{ staggerChildren: stagger, delayChildren: delay }}
       >
         {text.split(" ").map((word, i) => {
           return (
@@ -21,7 +24,7 @@ const AnimatedText = ({ text, className, variants, stagger }) => {
                 return (
                   <motion.span
                     variants={variants}
-                    className="inline-block"
+                    className={clsx("inline-block", { className })}
                     key={uuidv4()}
                   >
                     {char}
