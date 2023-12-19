@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
 import LuminiateLogo from "./LuminiateLogo";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 import { v4 as uuidv4 } from "uuid";
 import AnimatedText from "./Animation/AnimatedText.jsx";
@@ -12,26 +12,28 @@ const defaultAnimation = {
   visible: { opacity: 1, y: 0 },
 };
 const Introduction = () => {
-  const text = "Hello, I'm Tulza";
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
-      <div className="text-5xl font-bold italic">
-        <div className="flex">
+      <div className="text-[100px] font-bold italic">
+        {/* Hello, I'm Tulza 👋*/}
+        <p className="flex">
           <AnimatedText
             text="Hello, I'm "
             variants={defaultAnimation}
             stagger={0.05}
           />
           <AnimatedText
-            text="Tulza"
+            text="Ashton"
             applyEachChar="primary-gradient tracking-[7px] mr-[-7px]"
             variants={defaultAnimation}
             stagger={0.05}
             delay={0.5}
           />
+
           <motion.span
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0, rotate: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ opacity: { delay: 1 } }}
             whileHover={{
               rotate: [0, 30, 0],
               transition: {
@@ -43,7 +45,8 @@ const Introduction = () => {
           >
             👋
           </motion.span>
-        </div>
+        </p>
+        {/* Passionate in UX/UI, working with*/}
         <AnimatedText
           className="ml-[-20px] text-3xl font-normal"
           text="Passionate in UX/UI, working with"
