@@ -4,5 +4,14 @@ import JSLogo from "/JSLogo.svg";
 import ReactLogo from "/ReactLogo.svg";
 import TailwindLogo from "/TailwindLogo.svg";
 import Framer from "/Framer.svg";
+import FigmaLogo from "/FigmaLogo.svg";
 
-export { CSSLogo, HTMLLogo, JSLogo, ReactLogo, TailwindLogo, Framer };
+export {
+  CSSLogo,
+  HTMLLogo,
+  JSLogo,
+  ReactLogo,
+  TailwindLogo,
+  Framer,
+  FigmaLogo,
+};

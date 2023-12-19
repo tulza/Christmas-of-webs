@@ -6,13 +6,23 @@ import {
   ReactLogo,
   TailwindLogo,
   Framer,
+  FigmaLogo,
 } from "../Images.jsx";
 import LuminiateLogo from "../LuminiateLogo.jsx";
 import { motion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
 const MovingIcons = () => {
-  const logos = [CSSLogo, HTMLLogo, JSLogo, ReactLogo, TailwindLogo, Framer];
+  const logos = [
+    HTMLLogo,
+    CSSLogo,
+    JSLogo,
+    ReactLogo,
+    TailwindLogo,
+    Framer,
+    FigmaLogo,
+  ];
+  const ScrollSpeed = logos.length * 2;
   const calcDist = logos.length * 200;
 
   return (
@@ -22,11 +32,15 @@ const MovingIcons = () => {
         className="flex w-max"
         animate={{
           x: [0, -calcDist],
-          transition: { duration: 10, ease: "linear", repeat: Infinity },
+          transition: {
+            duration: ScrollSpeed,
+            ease: "linear",
+            repeat: Infinity,
+          },
         }}
       >
         {[...logos, ...logos].map((logo) => {
-          return <LuminiateLogo logo={logo} key={uuidv4()} />;
+          return <LuminiateLogo logo={logo} key={uuidv4()} className="" />;
         })}
       </motion.div>
     </div>

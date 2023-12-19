@@ -14,7 +14,7 @@ const defaultAnimation = {
 const Introduction = () => {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center">
-      <div className="text-[100px] font-bold italic">
+      <div className="z-50 text-[100px] font-bold italic">
         {/* Hello, I'm Tulza 👋*/}
         <p className="flex">
           <AnimatedText
