@@ -2,15 +2,10 @@ import clsx from "clsx";
 import React from "react";
 import LuminiateLogo from "./LuminiateLogo";
 import { motion } from "framer-motion";
-import {
-  CSSLogo,
-  HTMLLogo,
-  JSLogo,
-  ReactLogo,
-  TailwindLogo,
-} from "./Images.jsx";
+
 import { v4 as uuidv4 } from "uuid";
 import AnimatedText from "./Animation/AnimatedText.jsx";
+import MovingIcons from "./Animation/MovingIcons.jsx";
 
 const defaultAnimation = {
   hidden: { opacity: 0, y: 25 },
@@ -56,13 +51,7 @@ const Introduction = () => {
           stagger={0.05}
         />
       </div>
-      <div className="flex flex-row">
-        <LuminiateLogo logo={CSSLogo} />
-        <LuminiateLogo logo={HTMLLogo} />
-        <LuminiateLogo logo={JSLogo} />
-        <LuminiateLogo logo={ReactLogo} />
-        <LuminiateLogo logo={TailwindLogo} />
-      </div>
+      <MovingIcons />
     </div>
   );
 };
