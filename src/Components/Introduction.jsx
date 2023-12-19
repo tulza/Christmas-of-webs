@@ -29,7 +29,7 @@ const Introduction = () => {
           />
           <AnimatedText
             text="Tulza"
-            applyEachChar="primary-gradient"
+            applyEachChar="primary-gradient tracking-[7px] mr-[-7px]"
             variants={defaultAnimation}
             stagger={0.05}
             delay={0.5}
