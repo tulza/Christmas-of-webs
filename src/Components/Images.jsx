@@ -5,6 +5,8 @@ import ReactLogo from "/ReactLogo.svg";
 import TailwindLogo from "/TailwindLogo.svg";
 import Framer from "/Framer.svg";
 import FigmaLogo from "/FigmaLogo.svg";
+import BoxLink from "/boxLink.svg";
+import LinkLogo from "/LinkLogo.svg";
 
 export {
   CSSLogo,
@@ -14,4 +16,6 @@ export {
   TailwindLogo,
   Framer,
   FigmaLogo,
+  BoxLink,
+  LinkLogo,
 };

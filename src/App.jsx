@@ -3,7 +3,7 @@ import "./style/animation.css";
 import "./style/styles.css";
 import "./style/fonts.css";
 import "./style/scrollbar.css";
-import Homepage from "./Components/Homepage";
+import Homepage from "./Components/Pages/Homepage.jsx";
 
 function App() {
   return (

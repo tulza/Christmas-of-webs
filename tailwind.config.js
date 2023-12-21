@@ -32,6 +32,7 @@ export default {
       animation: {
         "slide-up": "slide-up-text 0.1s linear",
       },
+      boxShadow: { bento: "0px 0px 20px -5px rgba(255, 255, 255, 1) inset;" },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
